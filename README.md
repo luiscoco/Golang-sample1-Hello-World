@@ -1,5 +1,7 @@
 # Golang: my first application "Hello World!"
 
+![image](https://github.com/luiscoco/Golang-sample1-Hello-World/assets/32194879/95983f62-34fc-45de-be30-65e2568dd85a)
+
 Let's break down your Go code step by step:
 
 ## 1. Package Declaration
