@@ -79,7 +79,13 @@ It generates a new UUID using the uuid package and prints it to the console with
 
 UUIDs are useful for creating unique identifiers that are unlikely to collide, making them ideal for use in distributed systems or for creating unique database keys
 
-## 4. Dockerfile
+## 4. How to run the application in VSCode
+
+```
+go run hello.go
+```
+
+## 5. Dockerfile
 
 ```dockerfile
 # Stage 1: Build the Go application
@@ -116,7 +122,7 @@ EXPOSE 8080
 CMD ["./main"]
 ```
 
-### 4.1. Run the following command to build your Docker image
+### 5.1. Run the following command to build your Docker image
 
 ```
 docker build -t my-go-app .
@@ -126,7 +132,7 @@ Replace **my-go-ap** with the name you want for your Docker image
 
 The . at the end of the command specifies the current directory as the build context
 
-### 4.2. Run the Docker container
+### 5.2. Run the Docker container
 
 After the image is built, you can run a container using the image:
 
