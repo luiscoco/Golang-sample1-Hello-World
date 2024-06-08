@@ -115,3 +115,29 @@ EXPOSE 8080
 # Command to run the executable
 CMD ["./main"]
 ```
+
+### 4.1. Run the following command to build your Docker image
+
+```
+docker build -t my-go-app .
+```
+
+Replace **my-go-ap** with the name you want for your Docker image
+
+The . at the end of the command specifies the current directory as the build context
+
+### 4.2. Run the Docker container
+
+After the image is built, you can run a container using the image:
+
+```
+docker run -p 8080:8080 my-go-app
+```
+
+This command maps port 8080 of the host to **port 8080** of the container, allowing you to access your application through **http://localhost:8080**
+
+![image](https://github.com/luiscoco/Golang-sample1-Hello-World/assets/32194879/024f52e8-48d8-48b4-aa52-a997ed158bbb)
+
+![image](https://github.com/luiscoco/Golang-sample1-Hello-World/assets/32194879/0b8719f7-4bae-4c79-a6bb-963e076f2241)
+
+
